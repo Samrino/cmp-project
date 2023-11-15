@@ -52,82 +52,73 @@ header {
   }
 
   .center {
+    position: absolute;
+    top: 50%;
+    left: 20%;
     text-align: center;
-    background-image: url('p3.jpg');
-    height: 669px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    display: grid;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 
-  .center h1 {
+  .pat5 h1 {
     font-family: 'times', Courier, monospace;
     color: white;
     font-size: 50px;
     text-emphasis: center;
     
 }
-.center h1 span {
+.pat5 h1 span {
     color: rgb(7, 168, 243);
     
 }
-.pic-box{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  justify-items: center;
-  gap: 5px;
-}
-.boxes{
- display: grid;
-  align-items: center;
+
+.main-pics{
+  display: inline-flex;
   color: #00000034;
   z-index: 1;
   left: 0;
   top: 0%;
   content: ' ';
-  width: 540px;
-  height: 300px;
-  transition: 0.5s;
-  cursor: pointer;
+  
 }
 
-.box-1{
-  background-image: url("p4.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.box-2{
-  background-image: url("p5.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.box-3{
-  background-image: url("pi1.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.box-text{
-  font-size: 3em;
-  color: white;
-  text-align: center;
-  margin: 0;
-}
 
-.boxes:hover {
-  opacity: 0.5;
+img:hover {
+  opacity: 0.2;
+}
+.main-pics:hover { 
+
+  /* margin: 3px;
+   padding:3px;
+   list-style: 10px; */
+/* background-color: rgb(38, 221, 212); */
+border-radius: 6px;
+/* box-shadow: cadetblue; */
+background-color: #00000044;
+   content: ' '; 
+
+
 }
 
 
 
+.main-pics > div {
+  overflow: hidden;
+ }
+ .main-pics img {
+   transition: transform 0.3s;
+ }
+ .main-pics:hover img {
+   transform: scale(1.1);
+   
+ }
 
+ .container {
+   position: relative;
+   text-align: center;
+   color: white;
+   /* background-color: #00000034; */
+  
+ } 
  .container:hover {
   position: relative;
   text-align: center;
@@ -155,10 +146,10 @@ text-align: center;
    list-style: 90px;
    background-color: #00000044;
    content: ' '; 
-} 
+}
 
 
-footer{
+footer {
   background-color: rgb(14, 13, 13);
   height: 500px;
 width: 100%;
